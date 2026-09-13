@@ -1,0 +1,20 @@
+{
+  "entities": {
+    "Entitlement": {
+      "title": "Entitlement",
+      "description": "User entitlement records",
+      "type": "object",
+      "properties": {
+        "tier": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "firestore": {
+    "entitlements/{userId}": {
+      "schema": "Entitlement",
+      "description": "Host entitlements"
+    }
+  }
+}
